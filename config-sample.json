@@ -1,0 +1,26 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "031-45-154"
+    },
+    "platforms": [
+        {
+            "platform": "ma10880-switch-platform",
+            "name": "ma10880-platform",
+            "panels": [
+                {
+                    "id": "<hex id printed on the back of your keypad>",
+                    "name": "My Keypad",
+                    "buttons": [
+                        "Green",
+                        "Orange",
+                        "Red",
+                        "Yellow"
+                    ]
+                }
+            ]
+        }
+    ]
+}
