@@ -73,7 +73,6 @@ Platform.prototype.processMessage = function (message) {
     var device = this.accessories[deviceId]
     if (!device) {
         this.log.warn('Received button press for unknown device ' + deviceId)
-        response.end();
         return;
     }
     var buttonAndAction = message[14].toString(16);

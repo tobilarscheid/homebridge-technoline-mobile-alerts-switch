@@ -1,6 +1,6 @@
 {
   "name": "homebridge-technoline-mobile-alerts-switch",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Technoline Mobile Alerts Switch (MA 10880) plugin for homebridge: https://github.com/nfarina/homebridge",
   "license": "MIT",
   "keywords": [
