@@ -72,7 +72,7 @@ Platform.prototype.processMessage = function (message) {
     var deviceId = message.slice(6, 12).toString('hex').toLowerCase()
     var device = this.accessories[deviceId]
     if (!device) {
-        log.warn('Received button press for unknown device ' + deviceId)
+        this.log.warn('Received button press for unknown device ' + deviceId)
         response.end();
         return;
     }
