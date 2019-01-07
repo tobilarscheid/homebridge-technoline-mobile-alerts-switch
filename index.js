@@ -76,6 +76,9 @@ Platform.prototype.processMessage = function (message) {
         return;
     }
     var buttonAndAction = message[14].toString(16);
+    if (buttonAndAction.length < 2) {
+        this.log.debug('Ignoring button click ' + buttonAndAction + ' - invalid.');
+    }
     device[buttonAndAction.substr(0, 1) - 1].pushed(buttonAndAction.substr(1, 1));
 }
 
